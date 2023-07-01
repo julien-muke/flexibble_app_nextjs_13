@@ -13,11 +13,21 @@ export const authOptions: NextAuthOptions = {
         })
     ],
     jwt: {
-        encode: () => {
+        encode: ({ secret, token }) => {
 
         },
-        decode: () => {
+        decode: ({ secret, token }) => {
             
         }
+    },
+    theme: {
+        colorScheme: 'light',
+        logo: '/logo.png'
+    },
+    callbacks: {
+        async session({ session }) {
+
+        },
+        async signIn({ user })
     }
 }
