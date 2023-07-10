@@ -1,3 +1,17 @@
+# Build and Deploy a Full Stack Next.js 13 Application | React, Next JS 13, TypeScript, Tailwind CSS
+
+![Flexibble-app-nextjs-13-vercel-app-1-min](https://github.com/julien-muke/flexibble-nextjs13/assets/110755734/56384215-0866-4165-91b7-fa2813db8071)
+
+
+## Alongside building this application, i've learned how to:
+
+- Use Next.js 13 App Router and Server side Rendering
+- Implement Filtering Functionality
+- Complete Pagination Capabilities
+- Handle image uploads
+- Understanding and writing proper TypeScript
+- Learn Grafbase - a serverless GraphQL platform
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
