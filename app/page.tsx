@@ -1,4 +1,4 @@
-'use client';
+
 
 import { ProjectInterface } from "@/common.types";
 import Categories from "@/components/Categories";
