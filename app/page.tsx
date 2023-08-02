@@ -1,3 +1,5 @@
+'use client';
+
 import { ProjectInterface } from "@/common.types";
 import Categories from "@/components/Categories";
 import LoadMore from "@/components/LoadMore";
