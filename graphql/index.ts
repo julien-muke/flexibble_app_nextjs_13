@@ -68,11 +68,15 @@ export const projectsQuery = `
       edges {
         node {
           title
+          githubUrl
+          description
+          liveSiteUrl
           id
           image
           category
           createdBy {
             id
+            email
             name
             avatarUrl
           }
