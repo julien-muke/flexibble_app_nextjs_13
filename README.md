@@ -3,7 +3,7 @@
 ![Screenshot](Screenshot.png)
 
 ## Introduction
-SharePrompts is an open-source AI prompting tool for modern world to discover, create and share creative prompts.
+Flexibble is self-promotion and social networking platform for digital designers. It serves as a design portfolio platform, jobs and recruiting site and a platforms for designers to share their work online.
 
 ## Features:
 - Use Next.js 13 App Router and Server side Rendering
