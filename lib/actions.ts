@@ -1,6 +1,7 @@
 
 
 import { ProjectForm } from "@/common.types";
+import { categoryFilters } from "@/constants";
 import { createProjectMutation, createUserMutation, deleteProjectMutation, getProjectByIdQuery, getProjectsOfUserQuery, getUserQuery, projectsQuery, updateProjectMutation } from "@/graphql";
 import { GraphQLClient } from "graphql-request";
 
@@ -82,11 +83,19 @@ const makeGraphQLRequest = async (query: string, variables = {}) => {
     }
   }
 
-export const fetchAllProjects = async (category?: string, endCursor?: string ) => {
-  client.setHeader('x-api-key', apiKey);
+// export const fetchAllProjects = async (category?: string, endCursor?: string ) => {
+//   client.setHeader('x-api-key', apiKey);
 
-  return makeGraphQLRequest(projectsQuery, { category, endCursor})
-}
+//   return makeGraphQLRequest(projectsQuery, { category, endCursor})
+// }
+
+export const fetchAllProjects = (category?: string | null, endcursor?: string | null) => {
+  client.setHeader("x-api-key", apiKey);
+
+  const categories = category == null ? categoryFilters : [category];
+
+  return makeGraphQLRequest(projectsQuery, { categories, endcursor });
+};
 
 export const getProjectDetails = (id: string) => {
   client.setHeader('x-api-key', apiKey);
